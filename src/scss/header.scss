@@ -1,0 +1,27 @@
+.excel__header {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4px;
+
+  .input {
+    padding: 2px 7px;
+    color: #000000;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 22px;
+    outline: none;
+    &:hover{
+      border-color: $border-color;
+    }
+    &:focus {
+      border: 2px solid #1a73e8;
+    }
+  }
+
+  .button {
+    @include btn(red);
+  }
+}
